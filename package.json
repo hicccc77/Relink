@@ -1,0 +1,69 @@
+{
+  "name": "relink",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Relink is an evidence-oriented Agent runtime with SDK, CLI, HTTP API, and MCP interfaces.",
+  "author": {
+    "name": "cc",
+    "email": "yccccccy@proton.me"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./sdk": "./dist/sdk/index.js",
+    "./api": "./dist/api/server.js",
+    "./mcp": "./dist/mcp/server.js",
+    "./contracts": "./dist/contracts/index.js",
+    "./agent": "./dist/agent/runtime.js",
+    "./provider": "./dist/agent/services/dataProvider.js",
+    "./title": "./dist/agent/services/agentTitleService.js",
+    "./memory": "./dist/agent/services/agentMemorySynthesisService.js"
+  },
+  "bin": {
+    "relink": "dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "docs",
+    "examples",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/clean-dist.mjs && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "cli": "npm run build && node dist/cli/index.js",
+    "api": "npm run build && node dist/cli/index.js serve",
+    "mcp": "npm run build && node dist/cli/index.js mcp"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "relink",
+    "agent",
+    "relationship-intelligence",
+    "mcp",
+    "llm",
+    "evidence"
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.12",
+    "@ai-sdk/google": "^4.0.12",
+    "@ai-sdk/openai": "^4.0.11",
+    "@ai-sdk/openai-compatible": "^3.0.7",
+    "ai": "^7.0.22",
+    "jieba-wasm": "^2.2.0",
+    "zod": "^4.4.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "sample-team",
+  "name": "Sample project conversations",
+  "entities": [
+    { "id": "alice", "type": "person", "name": "Alice" },
+    { "id": "bob", "type": "person", "name": "Bob" },
+    { "id": "team", "type": "group", "name": "Project Team" }
+  ],
+  "interactions": [
+    { "id": "m1", "participants": ["alice", "bob"], "actorId": "alice", "occurredAt": "2025-01-03T09:00:00Z", "kind": "message", "content": "Good morning. I drafted the project plan and would love your feedback." },
+    { "id": "m2", "participants": ["alice", "bob"], "actorId": "bob", "occurredAt": "2025-01-03T10:15:00Z", "kind": "message", "content": "Thanks, this is helpful. I agree with the milestones and will review the risks." },
+    { "id": "m3", "participants": ["alice", "bob"], "actorId": "alice", "occurredAt": "2025-01-08T14:00:00Z", "kind": "meeting", "content": "Discussed scope, timeline and ownership. Both agreed to keep the weekly check-in." },
+    { "id": "m4", "participants": ["alice", "bob"], "actorId": "bob", "occurredAt": "2025-01-08T15:30:00Z", "kind": "message", "content": "Great discussion today! I will send the updated document." },
+    { "id": "m5", "participants": ["alice", "bob"], "actorId": "alice", "occurredAt": "2025-01-15T08:45:00Z", "kind": "message", "content": "The launch checklist is ready. Please flag any problem before Friday." },
+    { "id": "m6", "participants": ["alice", "bob"], "actorId": "bob", "occurredAt": "2025-01-15T11:20:00Z", "kind": "message", "content": "I found one issue in the data import, but the fix is underway." },
+    { "id": "m7", "participants": ["alice", "bob"], "actorId": "alice", "occurredAt": "2025-01-22T16:00:00Z", "kind": "message", "content": "Thanks for the quick fix. The report looks good and the team is happy." },
+    { "id": "m8", "participants": ["alice", "bob"], "actorId": "bob", "occurredAt": "2025-02-02T09:30:00Z", "kind": "message", "content": "Could we revisit the timeline? I am worried the current deadline is too tight." },
+    { "id": "m9", "participants": ["alice", "bob"], "actorId": "alice", "occurredAt": "2025-02-02T12:00:00Z", "kind": "message", "content": "Yes, let's adjust it together and keep the quality bar high." },
+    { "id": "m10", "participants": ["alice", "bob", "team"], "actorId": "team", "occurredAt": "2025-02-10T13:00:00Z", "kind": "meeting", "content": "Team review: timeline, launch, quality and next steps." },
+    { "id": "m11", "participants": ["alice", "bob"], "actorId": "bob", "occurredAt": "2025-02-18T17:30:00Z", "kind": "message", "content": "The new plan is clear. Thank you for keeping the communication open." },
+    { "id": "m12", "participants": ["alice", "bob"], "actorId": "alice", "occurredAt": "2025-02-26T09:00:00Z", "kind": "message", "content": "I am looking forward to the launch. Let me know if you need support." }
+  ]
+}
