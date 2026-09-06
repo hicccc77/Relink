@@ -1,6 +1,6 @@
 # Relink
 
-[English](README.md) | [Simplified Chinese](README.zh-CN.md)
+[English](README.md) | [中文](README.zh-CN.md)
 
 `Relink` is a general-purpose, evidence-oriented relationship analysis Agent for Node.js. Applications provide authorized interaction data through a `RelinkDataProvider`; the Agent then plans an investigation, reads source records, follows evidence across time, and produces a traceable answer.
 
